@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        <img class="card-logo" src="/logo.svg" alt="VBT LOGO">
+        <p>
+            Buradan özgeçmişini kolaylıkla gönderebilirsiniz. Uzman ekibimiz seçeceğiniz etiketlere göre arama yapacakları
+            için onları atlamayınız. Az da bilseniz lütfen işaretleyiniz.
+        </p>
+        <div class="drag-area">
+            <svg id="svg-upload" width="4rem" height="4rem" viewBox="0 0 58 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.704834 10C0.704834 4.7533 4.95813 0.5 10.2048 0.5H47.8916C53.1383 0.5 57.3916 4.75329 57.3916 10V38.8281C57.3916 44.0748 53.1383 48.3281 47.8916 48.3281H10.2048C4.95813 48.3281 0.704834 44.0748 0.704834 38.8281V10Z" stroke="#6B5ACC"/>
+                <path d="M41.4824 20.8198C42.1632 20.2437 42.1632 19.194 41.4824 18.6178L34.8122 12.9719C31.5161 10.1819 26.6866 10.1819 23.3905 12.9719L16.7203 18.6178C16.0396 19.194 16.0396 20.2437 16.7203 20.8198C17.259 21.2758 18.0485 21.2751 18.5863 20.818L20.4375 19.2449C23.2348 16.8678 27.5332 18.8558 27.5332 22.5268L27.5332 32.718C27.5332 33.584 28.2353 34.2861 29.1014 34.2861C29.9674 34.2861 30.6695 33.584 30.6695 32.718L30.6695 22.5268C30.6695 18.8559 34.9679 16.8678 37.7652 19.2449L39.6164 20.818C40.1542 21.2751 40.9437 21.2758 41.4824 20.8198Z" fill="#6B5ACC"/>
+                <path d="M28.8605 40.9226L29.3421 40.9226C30.0752 40.9226 30.6694 40.3283 30.6694 39.5953C30.6694 38.8622 30.0752 38.268 29.3421 38.268L28.8605 38.268C28.1275 38.268 27.5332 38.8622 27.5332 39.5953C27.5332 40.3283 28.1275 40.9226 28.8605 40.9226Z" fill="#6B5ACC"/>
+                </svg>    
+            Sürükle Bırak
+        </div>
+        <Button id="btn-upload">Yükle</Button>
+        <div class="custom-select">
+            <select id="positions" name="positions">
+            <option value="0">Pozisyon Seç</option>
+            <option value="1">İnsan Kaynakları</option>
+            <option value="2">Web Development</option>
+            <option value="3">Data Management</option>
+        </select>
+        <span id="arrow"><svg width="150%" height="10" viewBox="0 0 22 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.4902 0.289085C20.14 0.0781289 19.6897 -0.0234353 19.2373 0.00651807C18.7849 0.0364715 18.3671 0.195515 18.0749 0.449001L10.8159 6.79702L3.5569 0.449106C3.2655 0.194625 2.84734 0.034939 2.3944 0.00517737C1.94146 -0.0245843 1.49086 0.078016 1.14171 0.290407C0.792564 0.502799 0.573475 0.807584 0.532642 1.13771C0.491809 1.46784 0.632577 1.79627 0.923978 2.05075L9.49946 9.55109C9.66033 9.6917 9.86164 9.80482 10.0891 9.88244C10.3166 9.96007 10.5647 10.0003 10.8159 10.0003C11.0671 10.0003 11.3152 9.96007 11.5427 9.88244C11.7702 9.80482 11.9715 9.6917 12.1324 9.55109L20.7079 2.05065C20.9992 1.79591 21.1399 1.46732 21.099 1.13704C21.0582 0.806753 20.8392 0.501779 20.4902 0.289085Z" fill="#8B8B8B"/>
+            </svg>
+            </span>
+        </div>        
+        
+        <div class="skills-container">
+            <div class="skills">
+                <p id="p-checkboxes">Etiket Seç <br>Bu etiketlerin bize çok faydası olacaktır. Lütfen eksiksiz giriniz.</p>
+                <div class="checkboxes">
+                    <input type="checkbox" /><span>C#</span><br />
+                    <input type="checkbox" /><span>AngularJs</span><br />
+                    <input type="checkbox" /><span>Sql</span><br />
+                    <input type="checkbox" /><span>Html</span><br />
+                    <input type="checkbox" /><span>CSS</span><br />
+                    <input type="checkbox" /><span>Reactjs</span><br />
+                    <input type="checkbox" /><span>VueJs</span><br />
+                    <input type="checkbox" /><span>Java</span><br />
+                    <input type="checkbox" /><span>Python</span><br />
+                    <input type="checkbox" /><span>C#</span><br />
+                    <input type="checkbox" /><span>AngularJs</span><br />
+                    <input type="checkbox" /><span>Sql</span><br />
+                    <input type="checkbox" /><span>Html</span><br />
+                    <input type="checkbox" /><span>CSS</span><br />
+                    <input type="checkbox" /><span>Reactjs</span><br />
+                    <input type="checkbox" /><span>VueJs</span><br />
+                    <input type="checkbox" /><span>Java</span><br />
+                    <input type="checkbox" /><span>Python</span><br />
+                    <input type="checkbox" /><span>C#</span><br />
+                    <input type="checkbox" /><span>AngularJs</span><br />
+                    <input type="checkbox" /><span>Sql</span><br />
+                    <input type="checkbox" /><span>Html</span><br />
+                    <input type="checkbox" /><span>CSS</span><br />
+                    <input type="checkbox" /><span>Reactjs</span><br />
+                    <input type="checkbox" /><span>VueJs</span><br />
+                    <input type="checkbox" /><span>Java</span><br />
+                    <input type="checkbox" /><span>Python</span><br />
+                    <input type="checkbox" /><span>C#</span><br />
+                    <input type="checkbox" /><span>AngularJs</span><br />
+                    <input type="checkbox" /><span>Sql</span><br />
+                    <input type="checkbox" /><span>Html</span><br />
+                    <input type="checkbox" /><span>CSS</span><br />
+                    <input type="checkbox" /><span>Reactjs</span><br />
+                    <input type="checkbox" /><span>VueJs</span><br />
+                    <input type="checkbox" /><span>Java</span><br />
+                    <input type="checkbox" /><span>Python</span><br />
+                    <input type="checkbox" /><span>C#</span><br />
+                    <input type="checkbox" /><span>AngularJs</span><br />
+                    <input type="checkbox" /><span>Sql</span><br />
+                    <input type="checkbox" /><span>Html</span><br />
+                    <input type="checkbox" /><span>CSS</span><br />
+                    <input type="checkbox" /><span>Reactjs</span><br />
+                    <input type="checkbox" /><span>VueJs</span><br />
+                    <input type="checkbox" /><span>Java</span><br />
+                    <input type="checkbox" /><span>Python</span><br />
+                    <input type="checkbox" /><span>C#</span><br />
+                    <input type="checkbox" /><span>AngularJs</span><br />
+                    <input type="checkbox" /><span>Sql</span><br />
+                    <input type="checkbox" /><span>Html</span><br />
+                    <input type="checkbox" /><span>CSS</span><br />
+                    <input type="checkbox" /><span>Reactjs</span><br />
+                    <input type="checkbox" /><span>VueJs</span><br />
+                    <input type="checkbox" /><span>Java</span><br />
+                    <input type="checkbox" /><span>Python</span><br />
+                    <input type="checkbox" /><span>C#</span><br />
+                    <input type="checkbox" /><span>AngularJs</span><br />
+                    <input type="checkbox" /><span>Sql</span><br />
+                    <input type="checkbox" /><span>Html</span><br />
+                    <input type="checkbox" /><span>CSS</span><br />
+                    <input type="checkbox" /><span>Reactjs</span><br />
+                    <input type="checkbox" /><span>VueJs</span><br />
+                    <input type="checkbox" /><span>Java</span><br />
+                    <input type="checkbox" /><span>Python</span><br />
+                </div>
+                
+            </div>
+
+        </div>
+        <button id="btn-send">Gönder</button>
+        
+    </div>
+</body>
+</html>
